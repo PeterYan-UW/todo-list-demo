@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo</title>
+    <link rel="stylesheet" href="css/todo.css">
+  </head>
+  <body>
+    <div id="todo-app">
+      <template id='todo-item-template'>
+        <div class="app-todo-item">
+          <span class="app-todo-item-text"></span>
+        </div>
+      </template>
+      <header>
+        <h1 class="app-name">Todo</h1>
+      </header>
+      <hr>
+      <div class="one column">
+        <nav>
+          <ul>
+            <li>Plan your day!</li>
+            <li>Greatest App ever!</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="three column">
+        <div id="menu">
+          <input id='input-new-item' class="app-input" type="text">
+        </div>
+        <div id="todos">
+        </div>
+      </div>
+      <footer>
+        <hr>
+        2015 &copy; Todo App
+      </footer>
+    </div>
+    <script src="public/lib/underscore/underscore.js"></script>
+    <script src="javascript/todo.js"></script>
+  </body>
+</html>
+
+

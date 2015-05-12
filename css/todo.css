@@ -1,0 +1,85 @@
+/*
+Colour Scheme from Semantic UI:
+  black: #1b1c1d
+  yello: #f2c61f
+  green: #5bbd72
+  blue: #3b83c0
+  orange: #e07b53
+  purple: #564f8a
+  red: #d95c5c
+  pink: #d9499a
+  teal: #00b5ad
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(242, 198, 31, 0.4);
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+nav > ul > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.one.column {
+  width: 24%;
+}
+
+.three.column {
+  width: 74%;
+}
+
+#todo-app {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #564f8a;
+  border-radius: 10px;
+  color: white;
+}
+
+.app-name {
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.app-input {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 25px;
+}
+
+.app-input:focus {
+  background-color: #fcf3cf;
+  color: #777;
+}
+
+.app-todo-item {
+  width: 82%;
+  height: 30px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
