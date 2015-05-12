@@ -48,24 +48,27 @@ window.addEventListener('load', function() {
   };
 
   var TodoListControl = function(model) {
-    this.hostElement = document.getElementById('todos');
+    this.anchorElement = document.getElementById('todos');
     this.template = document.getElementById('todo-item-template');
     this.model = model;
     this.update = function(event) {
       console.log('update');
       if (event.type === 'ITEM_ADDED') {
         console.log('item added');
-        var itemDiv = document.importNode(this.template.content, true);
+        var itemDiv = document.createElement('div');
+        itemDiv.innerHTML = this.template.innerHTML;
         itemDiv.id = 'item-' + event.data.item.id;
-        var textSpan = itemDiv.firstChild;
+        itemDiv.className = 'app-todo-item';
+        var textSpan = itemDiv.children[0];
         textSpan.textContent = event.data.item.text;
-        this.hostElement.appendChild(itemDiv);
+        this.anchorElement.appendChild(itemDiv);
       }
       if (event.type === 'ITEM_REMOVED') {
-        console.log('item removed');
-        var itemDivId = 'item-' + event.data.id;
-        var itemDiv = document.getElementById(itemDivId);
-        hostElement.removeChild(itemDiv);
+        // TODO
+        // console.log('item removed');
+        // var itemDivId = 'item-' + event.data.id;
+        // var itemDiv = document.getElementById(itemDivId);
+        // hostElement.removeChild(itemDiv);
       }
     }
     this.model.addListner(this);

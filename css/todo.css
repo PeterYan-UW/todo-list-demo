@@ -65,7 +65,7 @@ nav > ul > li {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  height: 25px;
+  height: 40px;
 }
 
 .app-input:focus {
@@ -74,12 +74,26 @@ nav > ul > li {
 }
 
 .app-todo-item {
-  width: 82%;
-  height: 30px;
+  width: 81%;
+  height: 40px;
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  background-color: #00b5ad;
+  border: solid black 1px;
+  margin-top: 5px;
+  padding-bottom: 10px;
 }
+
+.app-todo-item:hover {
+  background-color: rgb(217, 92, 92);
+}
+
+.app-todo-item-text {
+  padding-left: 10px;
+  color: white;
+}
+
 
 
