@@ -18,6 +18,7 @@ window.addEventListener('load', function() {
         id: this.nextAvailableId,
         text: str
       };
+      this.nextAvailableId++;
       this.todos.push(item);
       var event = {
         type: 'ITEM_ADDED',
