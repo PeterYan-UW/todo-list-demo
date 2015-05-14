@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
     this.removeListner = function(listener) {
       var index = this.listeners.indexOf(listener);
       if (index !== -1) {
-        this.listeners.slice(index, 1);
+        this.listeners.splice(index, 1);
       }
     }
     this.addItem = function(str) {
